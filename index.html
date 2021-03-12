@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <title>Newsletter</title>
+</head>
+
+<body>
+    <h1 class="title">The Code Review</h1>
+    <div class="container">
+        <section class="top">
+            <div class="intro">
+                <h2>Signup for our newsletter</h2>
+                <p> Get the latest news on how your code is doing right in your inbox</p>
+            </div>
+            <div class="line-break">
+                <hr class="line-break-1">
+                <hr class="line-break-2">
+            </div>
+        </section>
+
+
+        <form action="index.html" method="post">
+            <section class="contact-information">
+                <fieldset>
+                    <legend>Contact Information</legend>
+
+                    <div class="flex">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="user_name" placeholder="Required">
+                    </div>
+
+                    <div class="flex">
+                        <label for="mail">Email Address</label>
+                        <input type="email" id="email" name="user_email" placeholder="Required">
+                    </div>
+
+                    <div class="flex">
+                        <label for="Phone">Phone Number</label>
+                        <input type="tel" id="phone" name="user_telephone">
+                    </div>
+
+                    <div class="flex">
+                        <label for="address">Street Address</label>
+                        <input type="text" id="address" name="user_address">
+                    </div>
+
+                    <div class="flex">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="user_city">
+                    </div>
+
+                    <div class="flex">
+                        <label for="state">State</label>
+                        <select name="state" id="user_state"></select>
+                    </div>
+
+                    <div class="flex">
+                        <label for="zipcode">Zip code</label><br>
+                        <input type="text" id="zipcode" name="user_zipcode">
+                    </div>
+
+                    <hr class="midway-line"><br>
+                </fieldset>
+            </section>
+
+            <section class="newsletter">
+                <fieldset>
+                    <legend class>Newsletter</legend>
+                    <label for="newsletter-checkbox">Select the newsletters you would like to receive</label><br>
+                    <input type="checkbox" id="html" value="html_news" name="user_html"><label for="html">HTML
+                        News</label><br>
+                    <input type="checkbox" id="css" value="css_news" name="user_css"><label for="css">CSS
+                        News</label><br>
+                    <input type="checkbox" id="js" value="js_news" name="user_js"><label for="js">Javascript
+                        News</label><br>
+                    <br>
+
+                    <label for="newsletter-radio">Newsletter format</label><br>
+                    <input type="radio" id="html" value="html" name="user_format"><label for="html">HTML</label><br>
+                    <input type="radio" id="plain_text" value="plain_text" name="user_format"><label
+                        for="plain_text">Plain
+                        text</label><br>
+                    <br>
+
+                    <label for="other_topics">Other topics you'd like to hear about</label>
+                    <textarea id="bio" name="user_bio"></textarea>
+
+                    <button type="submit">Sign Up</button>
+                </fieldset>
+                <h5 class="copyright">Copyright The Code Review</h3>
+            </section>
+
+        </form>
+    </div>
+</body>
+
+</html>
