@@ -89,8 +89,6 @@ input[type="search"],
 input[type="tel"],
 input[type="time"],
 input[type="url"],
-/* input[type="radio"],
-input[type="checkbox"], */
 textarea,
 select {
   background: rgba(255, 255, 255, 0.1);
@@ -145,6 +143,14 @@ label {
   margin-top: 15px;
 }
 
+option[value^="choose"] {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 200;
+  color: rgb(165, 164, 164);
+  font-style: italic;
+}
+
 /* Newsletter Form */
 
 button {
@@ -163,7 +169,7 @@ button {
 
 input[type="checkbox"],
 input[type="radio"] {
-  margin: 14px;
+  margin: 10px;
 }
 
 .copyright {
@@ -196,18 +202,24 @@ input[type="radio"] {
   /* Form */
   .flex {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
   }
 
   .flex label {
     margin-left: 0;
-    flex-basis: 35%;
+    flex-basis: 25%;
   }
 
   .flex input,
   select {
-    margin: 8px auto;
+    margin: 8px 0;
+    flex-basis: 75%;
+  }
+
+  select {
+    font-size: 12px;
+    font-family: inherit;
   }
 
   #zipcode {
@@ -215,7 +227,12 @@ input[type="radio"] {
   }
 }
 
-/* media query */
-/* .contact-formation br {
-	display: none; to make labels appear on left side.. if this doesnt work, ask in the slack channel for project 3
-} */
+.news-flex {
+  display: flex;
+  align-items: center;
+}
+
+/* trying to move the label */
+fieldset label[for^="newsletter"] {
+  margin-bottom: 30px;
+}
