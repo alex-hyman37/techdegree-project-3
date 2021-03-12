@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-	
 }
 
 html,
@@ -12,11 +11,13 @@ body {
   font-size: 14px;
 }
 
-input:focus {
-	border: 2px solid black;
-	border-radius: 4px;
-	outline: none;
-
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+  border: 2px solid black;
+  border-radius: 4px;
 }
 
 /* Top */
@@ -31,52 +32,51 @@ input:focus {
 }
 
 .intro {
-	margin: 0 auto;
-	width: 90%;
-	padding: 0;
-	text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  padding: 0;
+  text-align: center;
 }
 
 .intro h2 {
-	font-size: 16px;
-	margin-top: 20px;
-	margin-bottom: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .intro p {
-	font-size: 13px;
-	font-weight: 200;
-	color: grey;
-	margin-top: 0;
-	margin-bottom: 30px;
+  font-size: 13px;
+  font-weight: 200;
+  color: grey;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .line-break hr {
-	width: 90%;
-	margin: 0 auto;
-	margin-bottom: 3px;
-	
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 3px;
 }
 
 .line-break-1 {
-	border: none;
-	height: 3px;
-	background-color: black;
+  border: none;
+  height: 3px;
+  background-color: black;
 }
 
 .line-break-2 {
-	border: none;
-	height: 1.25px;
-	background-color: black;
+  border: none;
+  height: 1.25px;
+  background-color: black;
 }
 
 /* Form  */
 /* Contact Form */
 form {
-	margin: 25px auto 200px;
-	padding: 0;
-	width: 90%;
-	text-align: left;
+  margin: 25px auto 200px;
+  padding: 0;
+  width: 90%;
+  text-align: left;
 }
 
 input[type="text"],
@@ -93,9 +93,9 @@ input[type="url"],
 input[type="checkbox"], */
 textarea,
 select {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   border: none;
-	border-radius: 5px;
+  border-radius: 5px;
   font-size: 16px;
   height: auto;
   margin: 15px auto;
@@ -104,122 +104,112 @@ select {
   width: 100%;
   background-color: #e8eeef;
   color: #8a97a0;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
 }
 
 fieldset {
-	border: none;
-	text-align: left;
-	margin: 0;
-	padding: 0;
+  border: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
 }
 
 legend {
-	padding: 0;
-	font-weight: 700;
-	margin: 20px 0;
-	font-size: 18px;
+  padding: 0;
+  font-weight: 700;
+  margin: 20px 0;
+  font-size: 18px;
 }
 
 label {
-	color: grey;
-	font-weight: 200;
+  color: grey;
+  font-weight: 200;
 }
 
 ::placeholder {
-	text-align: right;
-	font-size: 14px;
-	font-weight: 200;
-	color: rgb(165, 164, 164);
-	font-style: italic;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 200;
+  color: rgb(165, 164, 164);
+  font-style: italic;
 }
 
 #zipcode {
-	max-width: 50%;
+  max-width: 50%;
 }
 
 .midway-line {
-	border: none;
-	height: 2px;
-	background-color: black;
-	margin-top: 15px;
+  border: none;
+  height: 2px;
+  background-color: black;
+  margin-top: 15px;
 }
 
 /* Newsletter Form */
 
-
-
 button {
   padding: 19px 39px 18px 39px;
-  color: #FFF;
+  color: #fff;
   background-color: #23b89d;
   font-size: 20px;
-	font-weight: 600;
+  font-weight: 600;
   text-align: center;
   font-style: normal;
   border-radius: 5px;
   width: 100%;
   border: none;
-	font-family: inherit;
+  font-family: inherit;
 }
 
-input[type=checkbox],
-input[type=radio] {
-	margin: 14px;
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 14px;
 }
 
 .copyright {
-	text-align: center;
-	font-style: italic;
-	font-weight: 400;
-	color: grey;
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  color: grey;
 }
 
+@media (min-width: 768px) {
+  /* Title */
+  .container {
+    margin: auto;
+    width: 550px;
+    font-size: 12px;
+  }
 
-@media(min-width: 768px) {
-	/* Title */
-	.container {
-		margin: auto;
-		width: 550px;
-		font-size: 12px;
-	}
+  .title {
+    font-size: 12px;
+  }
 
-	.title {
-		font-size: 12px
-	}
+  .intro {
+    margin-top: 40px;
+  }
 
-	.intro {
-		margin-top: 40px;
-	}
+  .intro p {
+    font-size: 10px;
+  }
 
-	.intro p {
-		font-size: 10px;
-	}
+  /* Form */
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-	/* Form */
-	.flex {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
+  .flex label {
+    margin-left: 0;
+    flex-basis: 35%;
+  }
 
-	.flex label {
-		margin-left: 0;
-		flex-basis: 35%;
-	}
-
-	.flex input, select {
-		margin: 8px auto;
-	}
-	
+  .flex input,
+  select {
+    margin: 8px auto;
+  }
 }
-
-
-
-
-
-
-
 
 /* media query */
 /* .contact-formation br {
