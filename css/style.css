@@ -126,10 +126,15 @@ label {
 
 ::placeholder {
   text-align: right;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 200;
   color: rgb(165, 164, 164);
   font-style: italic;
+}
+
+select {
+  font-size: 12px;
+  font-family: inherit;
 }
 
 #zipcode {
@@ -143,15 +148,12 @@ label {
   margin-top: 15px;
 }
 
-option[value^="choose"] {
-  text-align: left;
-  font-size: 14px;
-  font-weight: 200;
-  color: rgb(165, 164, 164);
-  font-style: italic;
-}
-
 /* Newsletter Form */
+
+.newsletter-label {
+  display: block;
+  margin-bottom: 8px;
+}
 
 button {
   padding: 19px 39px 18px 39px;
@@ -225,14 +227,9 @@ input[type="radio"] {
   #zipcode {
     max-width: 25%;
   }
-}
 
-.news-flex {
-  display: flex;
-  align-items: center;
-}
-
-/* trying to move the label */
-fieldset label[for^="newsletter"] {
-  margin-bottom: 30px;
+  .news-flex {
+    display: flex;
+    align-items: center;
+  }
 }
